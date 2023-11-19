@@ -17,14 +17,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>To-Do List</title>
   </head>
-  <body class="m-0 p-0">
-    <div class="container w-100 m-auto text-bg-dark min-vh-100">
+  <body class="m-0">
+    <div class="container w-100 m-auto text-bg-dark">
       <header class="header text-center">
         <h1 class="heading">To-Do List</h1>
-        <p>List Items: <span id="list-number">0</span></p>
+        <p class="mb-0">List Items: <span id="list-number">0</span></p>
+        <p class="mt-0">Click the task you've accomplished!</p>
       </header>
       <main class="main">
-        <ol class="list-container mb-2 text-bg-secondary"></ol>
+        <ol class="list-container mt-5 text-bg-secondary"></ol>
         <input type="text" id="input" />
         <button id="add" class="btn btn-success ms-1">Add</button>
         <button id="clear" class="btn btn-danger ms-1">Clear All</button>

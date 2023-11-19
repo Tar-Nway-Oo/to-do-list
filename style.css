@@ -1,0 +1,32 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: rgb(173, 173, 153);
+}
+
+.heading {
+   font-size: 2rem;
+}
+
+.container {
+   width: 100%;
+   max-width: 600px;
+   min-height: 100vh;
+}
+
+#list-number {
+   color: rgb(52, 137, 194);
+}
+
+@media (min-width: 600px) {
+
+   body {
+      padding: 2em;
+   }
+
+   .container {
+     min-height: 500px;
+   }
+}

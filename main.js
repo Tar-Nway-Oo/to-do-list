@@ -23,13 +23,19 @@ clearButton.addEventListener("click", () => {
   render();
 });
 
+function markList(index) {
+  lists.splice(index, 1);
+  render();
+}
+
 function render() {
   clearList(listContainer);
-  lists.forEach((list) => {
+  lists.forEach((list, index) => {
     const listItem = document.createElement("li");
     listItem.dataset.listId = list.id;
     listItem.classList.add("list-item");
     listItem.classList.add("border-bottom");
+    listItem.addEventListener("click", () => {markList(index)});
     listItem.innerText = list.task;
     listContainer.appendChild(listItem);
   });
